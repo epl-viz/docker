@@ -1,0 +1,16 @@
+bash
+sed
+tar
+which
+haveged
+pacman
+coreutils
+gawk
+gcc-libs
+glibc
+shadow
+grep
+file
+findutils
+procps-ng
+texinfo

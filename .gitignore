@@ -1,1 +1,3 @@
-archlinux.tar
+*.tar
+*.pkg.tar.xz
+*.kdev4
