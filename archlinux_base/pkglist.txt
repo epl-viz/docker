@@ -23,3 +23,4 @@ cython
 python
 wireshark-cli
 wireshark-common
+pkg-config

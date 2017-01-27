@@ -26,3 +26,4 @@ wireshark-common
 qt5-base
 qt5-tools
 qt5-declarative
+pkg-config
