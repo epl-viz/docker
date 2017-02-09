@@ -1,3 +1,6 @@
 [submodule "archlinux_base/lcov"]
 	path = archlinux_base/lcov
 	url = https://aur.archlinux.org/lcov.git
+[submodule "archlinux_base/qwt-qt5"]
+	path = archlinux_base/qwt-qt5
+	url = https://aur.archlinux.org/qwt-qt5.git
