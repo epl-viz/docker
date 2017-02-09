@@ -27,24 +27,14 @@ qt5-declarative
 qt5-tools
 qt5-multimedia
 qt5-svg
+qwt
 
 c-ares
-geoip
 
-gtk3
-krb5
 libpcap
-libcap
-libgcrypt
 glib2
 flex
 libssh
-gnutls
-portaudio
-lua52
-desktop-file-utils
-shared-mime-info
 xdg-utils
 bison
-hicolor-icon-theme
 pkg-config
