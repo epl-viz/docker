@@ -2,6 +2,8 @@
 
 cd "$(dirname "$0")"
 
+TO_BUILD=(archlinux_base)
+
 buildAUR() {
   local I DIR
   for I in *.pkg.tar.xz; do
@@ -30,7 +32,7 @@ buildAUR() {
   done
 }
 
-for DIR in *; do
+for DIR in "${TO_BUILD[@]}"; do
   [ ! -d $DIR ] && continue
   echo "Building $DIR"
   cd $DIR
