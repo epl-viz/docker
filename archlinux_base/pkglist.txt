@@ -46,3 +46,4 @@ libssh
 xdg-utils
 bison
 pkg-config
+zlib
