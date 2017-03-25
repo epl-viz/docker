@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=EPLViz
+Exec=eplviz
+Icon=eplviz
+Comment=An Application for visualising Ethernet POWERLINK network traffic

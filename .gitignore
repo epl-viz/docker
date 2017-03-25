@@ -1,3 +1,5 @@
 *.tar
 *.pkg.tar.xz
 *.kdev4
+*.AppImage
+*.AppDir
