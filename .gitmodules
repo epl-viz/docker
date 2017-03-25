@@ -4,3 +4,6 @@
 [submodule "archlinux_base/qwt-qt5"]
 	path = archlinux_base/qwt-qt5
 	url = https://aur.archlinux.org/qwt-qt5.git
+[submodule "archlinux_base/appimage-git"]
+	path = archlinux_base/appimage-git
+	url = https://aur.archlinux.org/appimage-git.git

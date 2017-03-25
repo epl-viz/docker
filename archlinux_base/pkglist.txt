@@ -47,3 +47,12 @@ xdg-utils
 bison
 pkg-config
 zlib
+
+fuse2
+inotify-tools
+libarchive
+lz4
+xz
+zsync
+wget
+openssl
