@@ -113,6 +113,7 @@ int main(int argc, char *argv[])
     char new_env6[length+1];
     char new_env7[length+1];
     char new_envp[length+1];
+    char new_envA[length+1];
 
     old_env = getenv("PATH") ?: "";
     snprintf(new_env1, length, "PATH=%s/usr/bin/:%s/usr/sbin/:%s/usr/games/:%s/bin/:%s/sbin/:%s", appdir, appdir, appdir, appdir, appdir, old_env);
@@ -146,6 +147,12 @@ int main(int argc, char *argv[])
     old_env = getenv("QT_PLUGIN_PATH") ?: "";
     snprintf(new_env7, length, "QT_PLUGIN_PATH=%s/usr/lib/qt4/plugins/:%s/usr/lib/i386-linux-gnu/qt4/plugins/:%s/usr/lib/x86_64-linux-gnu/qt4/plugins/:%s/usr/lib32/qt4/plugins/:%s/usr/lib64/qt4/plugins/:%s/usr/lib/qt5/plugins/:%s/usr/lib/i386-linux-gnu/qt5/plugins/:%s/usr/lib/x86_64-linux-gnu/qt5/plugins/:%s/usr/lib32/qt5/plugins/:%s/usr/lib64/qt5/plugins/:%s", appdir, appdir, appdir, appdir, appdir, appdir, appdir, appdir, appdir, appdir, old_env);
     putenv(new_env7);
+
+    old_env = getenv("APPDIR");
+    if(old_env == NULL) {
+        snprintf(new_envA, length, "APPDIR=%s", appdir);
+        putenv(new_envA);
+    }
 
     /* Run */
     ret = execvp(executable, argv); // FIXME: What about arguments in the Exec= line of the desktop file?
