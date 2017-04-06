@@ -19,7 +19,7 @@ QT_PLUGINS_ROOT="$3"
 APPDIR_NAME="EPLViz.AppDir"
 COPY_LIB=( "$EPL_ROOT/lib/eplViz" "$EPL_ROOT/lib/wireshark" "/usr/lib/python$PY_VER" )
 QT_PLUGINS=( "generic" "platforms" )
-COPY_BIN=( "$EPL_ROOT/bin/eplviz" "$EPL_ROOT/bin/dumpcap" "/usr/bin/python$PY_VER" "/usr/bin/python${PY_VER}m" )
+COPY_BIN=( "$EPL_ROOT/bin/eplviz""/usr/bin/python$PY_VER" "/usr/bin/python${PY_VER}m" "/usr/bin/bash" )
 COPY_SHARE=( "$EPL_ROOT/share/eplViz" )
 DIRS=( "usr/bin" "usr/lib" "usr/share/icons/hicolor/64x64/apps" "usr/lib/qt5" )
 EXCLUDE_LIBS=( "libGL" "VBoxOGL" "libEGL.so" "libdl.so" "libm.so" "librt.so" "libresolv.so" "libgcc_s" "libc.so" "libpthread" "lib/eplViz" )
@@ -65,6 +65,8 @@ for i in "${COPY_BIN[@]}"; do
   cp "$i" "$APPDIR_NAME/usr/bin"
   LIB_LIST+="$(ldd $i | awk '{print $3}' )"
 done
+
+cp ./dumpcap "$APPDIR_NAME/usr/bin"
 
 LIB_LIST="$(echo "$LIB_LIST" | sort | uniq )"
 
