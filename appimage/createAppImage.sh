@@ -18,7 +18,7 @@ QT_PLUGINS_ROOT="$3"
 
 APPDIR_NAME="EPLViz.AppDir"
 COPY_LIB=( "$EPL_ROOT/lib/eplViz" "$EPL_ROOT/lib/wireshark" "/usr/lib/python$PY_VER" )
-QT_PLUGINS=( "generic" "platforms" )
+QT_PLUGINS=( "generic" "platforms" "imageformats" "iconengines" )
 COPY_BIN=( "$EPL_ROOT/bin/eplviz" "/usr/bin/python$PY_VER" "/usr/bin/python${PY_VER}m" "$EPL_ROOT/bin/dumpcap" )
 COPY_SHARE=( "$EPL_ROOT/share/eplViz" )
 DIRS=( "usr/bin" "usr/lib" "usr/share/icons/hicolor/64x64/apps" "usr/lib/qt5" )
