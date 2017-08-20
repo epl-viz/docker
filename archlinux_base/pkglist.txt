@@ -29,6 +29,7 @@ qt5-declarative
 qt5-tools
 qt5-multimedia
 qt5-svg
+qwt
 gettext
 
 tinyxml2

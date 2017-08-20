@@ -80,5 +80,5 @@ done
 if [ -x appimagetool-x86_64.AppImage ]; then
   ./appimagetool-x86_64.AppImage "$APPDIR_NAME"
 else
-  appimagetool "$APPDIR_NAME"
+  appimagetool -n "$APPDIR_NAME"
 fi
